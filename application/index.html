@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:wght@300&family=Smooch&family=Zen+Loop:ital@1&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/application/bootstrao.css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>GerarSenha</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container">
+        <header class="d-flex justify-content-center py-3 border-bottom">
+            <h1>Obsidioon</h1>
+        </header>
+    </div>
+
+
+    <div class="container ">
+        <article class=" container p-2 cont-principal  bg-light rounded-3  w-75 h-50 ">
+            <form action="">
+                <!-- <span class="m-2 senha-a">Senha: </span> -->
+                <article class="senha-a2 border-bottom ">
+                    <p class=" Secondary senha-p  bg-light">Senha:</p>
+                    <textarea class=" Secondary senha-a w-100  bg-light" id="resp_ht"></textarea>
+                </article>
+
+                <button class=" copy-btn  btn btn-dark" type="button" onclick="copiarTexto()">copy</button>
+               
+                <!-- <button type="button" class="btn-clipboard btn btn-outline-dark mt-0 me-0" aria-label="Copy to clipboard"> copy</button><br> -->
+
+                <article class="w-75 container cont-principal">
+
+                    <!-- <button type="button" class=" copy-btn btn-clipboard btn btn-outline-dark"
+                        aria-label="Copy to clipboard"> copy</button> -->
+                    <label for="p-2 customRange" class="form-label formss " id="lenght">Caracteres</label><br>
+                    <span id="rangeValue">0</span>
+                    <input type="range" class="form-range rangee " id="range-lenght" min="4" max="20"
+                        onchange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"><br>
+                </article>
+
+
+                <article class="config-form marg">
+
+
+                    <section class="config config-1 ms-3">
+
+
+                        <article class="artic">
+                            <label class="form-check-label pt-2" for="flexRadioDefault1"> <input
+                                    class="form-check-input inputt" type="radio" onclick="onChange()"
+                                    name="flexRadioDefault" id="flexRadioDefault1"> Senha simples</label>
+                            <!-- <label class="form-check-label" for="flexRadioDefault1">
+                            Senha simples
+                            </label> -->
+                        </article>
+
+
+                        <article class="artic">
+                            <label class="form-check-label pt-2" for="flexRadioDefault2"><input
+                                    class="form-check-input  inputt" type="radio" onclick="onChange2()"
+                                    name="flexRadioDefault" id="flexRadioDefault2" checked> Senha
+                                composta</label>
+                            <!-- <label class="form-check-label" for="flexRadioDefault2">
+                                Senha composta
+                            </label> -->
+                        </article>
+
+
+                        <article class="artic">
+                            <label class="form-check-label pt-2" for="flexRadioDefault2"> <input
+                                    class="form-check-input  inputt" type="radio" onclick="onChange3()"
+                                    name="flexRadioDefault" id="flexRadioDefault2" checked> Senha
+                                complexa</label>
+                            <!-- <label class="form-check-label" for="flexRadioDefault2">
+                                Senha complexa
+                            </label> -->
+                        </article>
+
+                    </section>
+
+                    <section class=" config config-2 me-3 marg">
+
+
+
+                        <!-- <label class="form-check-label me-4 pt-2" for="flexCheckDefault"></label><input
+                            class=" p-2 form-check-input" type="checkbox" value="" id="simples_ht"> Letra
+                        minúscula e maiúscula</label> -->
+                        <!-- <label class="form-check-label" for="flexCheckDefault">Letra minúscula</label> -->
+
+
+                        <!-- <label class="form-check-label pt2" for="flexCheckDefault"> </label><input
+                                class=" p-2 form-check-input" type="checkbox" value="" id="composto_ht"> letra
+                            maiúscula</label> -->
+                        <!-- <label class="form-check-label" for="flexCheckDefault">letra maiúscula</label> -->
+
+                        <!-- <label class="form-check-label pt-2" for="flexCheckDefault"></label><input
+                            class=" p-2 form-check-input" type="checkbox" value="" id="simples_ht"> Número </label> -->
+                        <!-- <label class="form-check-label" for="flexCheckDefault">Letra minúscula</label> -->
+
+
+                        <!-- <label class="form-check-label pt-2" for="flexCheckDefault"></label> <input
+                            class=" p-2 form-check-input" type="checkbox" value="" id="composto_ht">
+                        Símbulos</input> -->
+                        <!-- <label class="form-check-label" for="flexCheckDefault">letra maiúscula</label> -->
+
+
+
+                        <div class=" select input-group ">
+                            <input class="form-check-input rounded  inputt " type="checkbox" id="gridCheck1">
+                            <label class="form-check-label ms-3" for="gridCheck">
+                                Caracteres simples
+                            </label>
+                        </div>
+
+                        <div class=" select input-group ">
+                            <input class="form-check-input rounded  inputt" type="checkbox" id="gridCheck2">
+                            <label class="form-check-label ms-3" for="gridCheck">
+                                Números
+                            </label>
+                        </div>
+
+                        <div class=" select input-group ">
+                            <input class="form-check-input rounded  inputt" type="checkbox" id="gridCheck3">
+                            <label class="form-check-label ms-3" for="gridCheck">
+                                Caractere especial
+                            </label>
+                        </div>
+    </div>
+
+
+    </section>
+
+    </article>
+
+    </form>
+
+    </article>
+    </div>
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="container pt-5">
+        <footer class="d-flex footer-menu  align-items-center py-3  border-top">
+            <div class="col-md-12 d-flex align-items-center">
+
+                <p class="mb-3 mb-md-0 footer-menu text-muted">@Joao-VitorGD1703</p>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="/application/bootstrao.js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
